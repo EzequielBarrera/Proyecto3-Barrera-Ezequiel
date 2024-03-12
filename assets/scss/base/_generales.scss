@@ -4,19 +4,8 @@
     box-sizing: border-box;
 }
 
-h1{
-    border: 2px solid black;
-    padding: 10px;
-    border-radius: 20px;
-    text-decoration: underline;
-}
-
-// body{
-//     background: rgb(255,230,232);
-//     background: linear-gradient(180deg, rgba(255,230,232,1) 56%, rgba(244,132,152,1) 98%);
-//     background-repeat: no-repeat;
-// }
-
-main{
-    margin-top: 90px;
+#cuerpo{
+    margin-top: 140px;
+    height: auto;
+    width: 100%;
 }

@@ -4,23 +4,17 @@
   box-sizing: border-box;
 }
 
-h1 {
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 20px;
-  text-decoration: underline;
-}
-
-main {
-  margin-top: 90px;
+#cuerpo {
+  margin-top: 140px;
+  height: auto;
+  width: 100%;
 }
 
 .navbar {
-  background-color: rgba(255, 192, 203, 0.37);
+  background-color: rgb(255, 192, 203);
   color: rgb(231, 95, 117);
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .oc-color {
@@ -33,11 +27,25 @@ main {
 
 .logo {
   border: 2px solid black;
-  background-color: grey;
+  background-color: gray;
   border-radius: 100%;
-  padding: 5px;
-  width: 100%;
-  height: 50px;
+  width: 74px;
+  margin-left: 50px;
+  padding: 2px;
+}
+
+.nav-title {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: underline;
+  margin-right: 25px;
+  text-align: center;
+}
+
+.oc-bt {
+  padding: 20px;
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
