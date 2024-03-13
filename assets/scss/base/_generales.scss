@@ -5,7 +5,24 @@
 }
 
 #cuerpo{
-    margin-top: 140px;
     height: auto;
     width: 100%;
+    padding: 0 20px;
+    margin-top: 140px;
+}
+
+#pie-dt{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul{
+    padding-left: 0;
 }

@@ -1,0 +1,26 @@
+body{
+    .pie-dt {
+        height: 100%;
+        background-color: rgb(255, 231, 186);
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            li {
+                display: inline-block;
+                a{
+                    font-size: 30px;
+                    color: rgb(238, 130, 130);
+                }
+                a:hover{
+                    color: rgb(194, 194, 119);
+                }
+            }
+            li:hover{
+                transform: scale(1.2);
+                transition: all ease 0.1s;
+            }
+        }
+    }
+}

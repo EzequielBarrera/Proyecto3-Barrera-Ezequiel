@@ -1,0 +1,41 @@
+// NAV Y FOOTER GENERAL
+
+@media(min-width:$mobile) and (max-width:$laptop){
+    .nav-desktop{
+        display: none;
+    }
+
+    #pie-dt{
+        display: none;
+    }
+}
+
+@media(min-width:$tablet) and (max-width:$laptop){
+    .logo{
+        transform: scale(1.3);
+    }
+    .nav-title{
+        transform: scale(1.3);
+    }
+}
+
+@media(min-width:$laptop){
+    #cuerpo{
+        margin-top: 10px;
+    }
+    .nav-bootstrap{
+        display: none;
+    }
+    .nav-dt-cont{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media(min-width:$desktop){
+    .nav-dt-cont{
+        display: flex;
+        justify-content: space-around;
+    }
+}

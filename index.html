@@ -17,16 +17,18 @@
     <header>
         <div class="nav-bootstrap">
             <nav class="navbar fixed-top">
-                <div class="container-fluid d-flex justify-content-evenly align-items-center text-center">
+                <div class="nav-cont container-fluid d-flex  justify-content-around align-items-center text-center">
                     <a class="navbar-brand" href="./index.html"><img class="logo" src="./multimedia/img/logo.webp"
                             alt="logo"></a>
-                    <p class="nav-title">
-                        <b>
-                            Pastelería de
-                            <br>
-                            Osvaldo
-                        </b>
-                    </p>
+                    <a class="link-title" href="./index.html">
+                        <p class="nav-title">
+                            <b>
+                                Pastelería de
+                                <br>
+                                Osvaldo
+                            </b>
+                        </p>
+                    </a>
                     <button class="navbar-toggler oc-bt" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -90,13 +92,47 @@
                 </div>
             </nav>
         </div>
+        <div class="nav-desktop">
+            <nav class="nav-dt-cont">
+                <div class="logo-cont">
+                    <a href="./index.html">
+                        <img class="logo-dt" src="./multimedia/img/logo.webp" alt="logo">
+                    </a>
+                </div>
+                <h1 class="nav-dt-title">
+                    <b>
+                        Pastelería de Osvaldo
+                    </b>
+                </h1>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">...</a>
+                        </li>
+                        <li>
+                            <a href="#">...</a>
+                        </li>
+                        <li>
+                            <a href="#">...</a>
+                        </li>
+                        <li>
+                            <a href="#">...</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main id="cuerpo">
+
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et earum sunt provident molestias porro
             praesentium veniam placeat assumenda asperiores, velit itaque tempore, non error repellendus optio incidunt
             facilis natus obcaecati laudantium at quia enim in! Pariatur hic ratione necessitatibus corporis! Placeat
-            officiis deserunt alias consequuntur a dolorem perspiciatis tenetur! Non.
+            officiis alias consequuntur a dolorem perspiciatis tenetur! Non.
         </p>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et earum sunt provident molestias porro
@@ -117,7 +153,32 @@
             officiis deserunt alias consequuntur a dolorem perspiciatis tenetur! Non.
         </p>
     </main>
-
+    <footer id="pie-dt">
+        <div class="pie-dt">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
