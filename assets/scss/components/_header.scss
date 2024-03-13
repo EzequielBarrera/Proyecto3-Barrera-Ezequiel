@@ -2,23 +2,19 @@ body {
     header {
         .nav-bootstrap {
             .navbar {
-                background-color: $colorNav;
+                background-color: map-get($colores, color-nav);
                 display: flex;
                 flex-wrap: nowrap;
 
                 .nav-cont {
                     .logo {
-                        border: 2px solid black;
-                        background-color: gray;
-                        border-radius: 100%;
+                        @extend .logo;
                         width: 74px;
                         margin-left: 50px;
-                        padding: 2px;
-                        transition: all ease .3s;
                     }
 
                     .link-title {
-                        color: $colorTit;
+                        color: map-get($colores , color-tit);
                         font-family: $fuenteTitulo;
 
                         .nav-title {
@@ -29,7 +25,6 @@ body {
                             text-align: center;
                             font-size: 19px;
                             margin-top: 15px;
-                            transition: all ease .3s;
                         }
                     }
 
@@ -41,11 +36,11 @@ body {
 
                     div.offcanvas {
                         .oc-color {
-                            background-color: pink;
+                            background-color: map-get($colores, oc-color);
                         }
 
                         .oc-b-color {
-                            background-color: beige;
+                            background-color: map-get($colores, oc-b-color);
                         }
                     }
                 }
@@ -56,21 +51,19 @@ body {
         .nav-desktop {
             width: 100%;
             height: 128px;
-            background-color: $colorNav;
+            background-color: map-get($colores, color-nav);
 
             .nav-dt-cont {
                 height: 100%;
                 display: flex;
                 align-items: center;
+
                 .logo-cont {
                     a {
                         .logo-dt {
+
+                            @extend .logo;
                             height: 100px;
-                            width: 100%;
-                            border: 2px solid black;
-                            background-color: gray;
-                            border-radius: 100%;
-                            padding: 2px;
 
                         }
 
@@ -82,7 +75,7 @@ body {
                 }
 
                 .nav-dt-title {
-                    color: $colorTit;
+                    color: map-get($colores, color-tit);
                     font-family: $fuenteTitulo;
                 }
 

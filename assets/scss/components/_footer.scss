@@ -1,7 +1,7 @@
 body{
     .pie-dt {
         height: 100%;
-        background-color: rgb(255, 231, 186);
+        background-color:map-get($colores, color-foot );
         ul {
             display: flex;
             justify-content: space-around;

@@ -37,7 +37,7 @@ ul {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .logo {
+  .logo, body header .nav-desktop .nav-dt-cont .logo-cont a .logo-dt, body header .nav-bootstrap .navbar .nav-cont .logo {
     transform: scale(1.3);
   }
   .nav-title {
@@ -62,19 +62,21 @@ ul {
     justify-content: space-around;
   }
 }
+.logo, body header .nav-desktop .nav-dt-cont .logo-cont a .logo-dt, body header .nav-bootstrap .navbar .nav-cont .logo {
+  border: 2px solid black;
+  background-color: gray;
+  border-radius: 100%;
+  padding: 2px;
+}
+
 body header .nav-bootstrap .navbar {
   background-color: rgb(255, 192, 203);
   display: flex;
   flex-wrap: nowrap;
 }
-body header .nav-bootstrap .navbar .nav-cont .logo {
-  border: 2px solid black;
-  background-color: gray;
-  border-radius: 100%;
+body header .nav-bootstrap .navbar .nav-cont .logo, body header .nav-bootstrap .navbar .nav-cont .nav-desktop .nav-dt-cont .logo-cont a .logo-dt, body header .nav-desktop .nav-dt-cont .logo-cont a .nav-bootstrap .navbar .nav-cont .logo-dt {
   width: 74px;
   margin-left: 50px;
-  padding: 2px;
-  transition: all ease 0.3s;
 }
 body header .nav-bootstrap .navbar .nav-cont .link-title {
   color: rgb(167, 28, 51);
@@ -88,7 +90,6 @@ body header .nav-bootstrap .navbar .nav-cont .link-title .nav-title {
   text-align: center;
   font-size: 19px;
   margin-top: 15px;
-  transition: all ease 0.3s;
 }
 body header .nav-bootstrap .navbar .nav-cont .oc-bt {
   padding: 20px;
@@ -112,11 +113,6 @@ body header .nav-desktop .nav-dt-cont {
 }
 body header .nav-desktop .nav-dt-cont .logo-cont a .logo-dt {
   height: 100px;
-  width: 100%;
-  border: 2px solid black;
-  background-color: gray;
-  border-radius: 100%;
-  padding: 2px;
 }
 body header .nav-desktop .nav-dt-cont .logo-cont a .logo-dt:hover {
   transform: scale(1.2);
