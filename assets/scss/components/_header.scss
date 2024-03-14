@@ -88,10 +88,8 @@ body {
                             margin: 20px;
 
                             a {
-                                border: 2px solid black;
-                                padding: 15px;
-                                border-radius: 30px;
-                                background-color: rgba(245, 245, 220, 0.37);
+                                @extend .borde-link;
+                                color: black;
                             }
 
                             a:hover {

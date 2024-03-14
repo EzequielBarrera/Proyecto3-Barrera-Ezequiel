@@ -1,26 +1,53 @@
-body{
+body {
     .pie-dt {
+        display: flex;
+        justify-content: space-around;
         height: 100%;
-        background-color:map-get($colores, color-foot );
-        ul {
+        padding: 15px;
+        background-color: map-get($colores, color-foot);
+
+        .pie-dt-contacto {
             display: flex;
-            justify-content: space-around;
             align-items: center;
-            padding: 10px;
-            li {
-                display: inline-block;
-                a{
-                    font-size: 30px;
-                    color: rgb(238, 130, 130);
+            flex-direction: column;
+
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 10px;
+
+                    a {
+                        font-size: 40px;
+                        color: rgb(238, 130, 130);
+                    }
+
+                    a:hover {
+                        color: rgb(194, 194, 119);
+                    }
                 }
-                a:hover{
-                    color: rgb(194, 194, 119);
+
+                li:hover {
+                    transform: scale(1.2);
+                    transition: all ease 0.1s;
                 }
-            }
-            li:hover{
-                transform: scale(1.2);
-                transition: all ease 0.1s;
             }
         }
+        .pie-dt-serv{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            ul{
+                li{
+                    display: inline-block;
+                    text-align: center;
+                    margin: 10px;
+                    @extend .borde-link;
+                    a{
+                        color:black
+                    }
+                }
+            }
+        }
+
     }
 }

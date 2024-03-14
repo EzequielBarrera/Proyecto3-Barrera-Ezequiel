@@ -28,6 +28,10 @@ ul {
   padding-left: 0;
 }
 
+h5 {
+  text-decoration: underline;
+}
+
 @media (min-width: 320px) and (max-width: 1023px) {
   .nav-desktop {
     display: none;
@@ -67,6 +71,13 @@ ul {
   background-color: gray;
   border-radius: 100%;
   padding: 2px;
+}
+
+.borde-link, body .pie-dt .pie-dt-serv ul li, body header .nav-desktop .nav-dt-cont .list ul li a {
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: rgba(245, 245, 220, 0.37);
 }
 
 body header .nav-bootstrap .navbar {
@@ -130,10 +141,7 @@ body header .nav-desktop .nav-dt-cont .list ul li {
   margin: 20px;
 }
 body header .nav-desktop .nav-dt-cont .list ul li a {
-  border: 2px solid black;
-  padding: 15px;
-  border-radius: 30px;
-  background-color: rgba(245, 245, 220, 0.37);
+  color: black;
 }
 body header .nav-desktop .nav-dt-cont .list ul li a:hover {
   background-color: rgba(220, 20, 60, 0.377);
@@ -145,28 +153,44 @@ body header .nav-desktop .nav-dt-cont .list ul li:hover {
 }
 
 body .pie-dt {
-  height: 100%;
-  background-color: rgb(255, 231, 186);
-}
-body .pie-dt ul {
   display: flex;
   justify-content: space-around;
+  height: 100%;
+  padding: 15px;
+  background-color: rgb(255, 231, 186);
+}
+body .pie-dt .pie-dt-contacto {
+  display: flex;
   align-items: center;
-  padding: 10px;
+  flex-direction: column;
 }
-body .pie-dt ul li {
+body .pie-dt .pie-dt-contacto ul li {
   display: inline-block;
+  margin: 10px;
 }
-body .pie-dt ul li a {
-  font-size: 30px;
+body .pie-dt .pie-dt-contacto ul li a {
+  font-size: 40px;
   color: rgb(238, 130, 130);
 }
-body .pie-dt ul li a:hover {
+body .pie-dt .pie-dt-contacto ul li a:hover {
   color: rgb(194, 194, 119);
 }
-body .pie-dt ul li:hover {
+body .pie-dt .pie-dt-contacto ul li:hover {
   transform: scale(1.2);
   transition: all ease 0.1s;
+}
+body .pie-dt .pie-dt-serv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .pie-dt .pie-dt-serv ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+body .pie-dt .pie-dt-serv ul li a {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+// COMPONENTES
+
 #cuerpo{
     height: auto;
     width: 100%;
@@ -15,6 +17,8 @@
     width: 100%;
 }
 
+// LINKS Y LISTAS
+
 a{
     text-decoration: none;
 }
@@ -25,4 +29,10 @@ ul li{
 
 ul{
     padding-left: 0;
+}
+
+// TITULOS
+
+h5{
+    text-decoration: underline;
 }
