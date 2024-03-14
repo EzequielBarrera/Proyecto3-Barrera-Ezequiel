@@ -31,6 +31,12 @@ body {
                             background-color: beige;
                         }
                     }
+
+                    button:hover {
+                        background-color: rgba(220, 20, 60, 0.377);
+                        color: white;
+                        transition: all ease 0.1s
+                    }
                 }
             }
 

@@ -1,0 +1,30 @@
+body{
+    main{
+        .contacto{
+            margin: 20px 0;
+            .contacto-form{
+                .form{
+                    margin-top: 20px;
+                    width: 100%;
+                    input, textarea{
+                        width: 100%;
+                        background-color: beige;
+                        outline: none;
+                        border: none;
+                        border-bottom: 2px solid map-get($colores, color-nav );
+                    }
+                }
+                .sub-btn{
+                    display: flex;
+                    justify-content: end;
+                    input{
+                        padding: 10px 25px;
+                        border-radius: 10px;
+                        background-color: map-get($colores, color-nav );
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

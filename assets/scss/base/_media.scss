@@ -1,3 +1,10 @@
+// CUERPO MARGIN TOP
+@media(max-width:425px){
+    #cuerpo{
+        margin-top: 150px;
+    }
+}
+
 // NAV Y FOOTER GENERAL
 
 @media(min-width:$mobile) and (max-width:$laptop){
@@ -92,3 +99,23 @@
     
 }
 
+// CONTACTO
+@media(min-width:$laptop){
+    h1{
+        font-size: 50px;
+    }
+    .contacto{
+        padding: 0 50px;
+        display: flex;
+        .info-contacto{
+            width: 50%;
+            p{
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+        }
+        .contacto-form{
+            width: 50%;
+        }
+    }
+}
