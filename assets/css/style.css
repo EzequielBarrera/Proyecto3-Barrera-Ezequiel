@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,8 @@
   height: auto;
   width: 100%;
   padding: 0 20px;
-  margin-top: 140px;
+  margin-top: 120px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #pie-dt {
@@ -28,8 +30,18 @@ ul {
   padding-left: 0;
 }
 
-h5 {
+h1, h2, h3, h4, h5 {
   text-decoration: underline;
+  text-align: center;
+}
+
+h1 {
+  margin: 15px;
+  padding: 20px;
+}
+
+h2, h3, h4 {
+  padding: 5px;
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
@@ -66,6 +78,49 @@ h5 {
     justify-content: space-around;
   }
 }
+@media (min-width: 768px) and (max-width: 1440px) {
+  .cuerpo {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: "curso prox" "receta receta";
+  }
+  .curso {
+    grid-area: curso;
+  }
+  .prox {
+    grid-area: prox;
+  }
+  .receta {
+    grid-area: receta;
+  }
+  .receta .card-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .receta .card-flex .card, .receta .card-flex body main .cuerpo .card-cont, body main .cuerpo .receta .card-flex .card-cont {
+    margin: 10px;
+  }
+}
+@media (min-width: 1440px) {
+  .cuerpo {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "curso receta" "curso receta" "prox prox";
+  }
+  .curso {
+    grid-area: curso;
+  }
+  .prox {
+    grid-area: prox;
+  }
+  .receta {
+    grid-area: receta;
+  }
+  .receta .card-flex {
+    display: flex;
+  }
+}
 .logo, body header .nav-desktop .nav-dt-cont .logo-cont a .logo-dt, body header .nav-bootstrap .navbar .nav-cont .logo {
   border: 2px solid black;
   background-color: gray;
@@ -78,6 +133,44 @@ h5 {
   padding: 15px;
   border-radius: 30px;
   background-color: rgba(245, 245, 220, 0.37);
+}
+
+.card, body main .cuerpo .card-cont, body main .cuerpo .card {
+  width: 100%;
+  height: fit-content;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 1rem auto;
+}
+
+body main h1 {
+  font-family: "Dancing Script", cursive;
+}
+body main .cuerpo .card, body main .cuerpo .card-cont {
+  background-color: rgb(255, 192, 203);
+}
+body main .cuerpo .card .img-card, body main .cuerpo .card-cont .img-card {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body main .cuerpo .card .cuerpo-card p, body main .cuerpo .card-cont .cuerpo-card p {
+  text-align: center;
+}
+body main .cuerpo .card .cuerpo-card a button, body main .cuerpo .card-cont .cuerpo-card a button {
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: beige;
+}
+body main .cuerpo .card-cont {
+  padding: 20px;
+}
+body main .cuerpo .card-cont .bg-color {
+  background-color: beige;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 body header .nav-bootstrap .navbar {

@@ -39,3 +39,56 @@
         justify-content: space-around;
     }
 }
+
+// INDEX
+@media(min-width:$tablet) and (max-width:$desktop){
+    .cuerpo{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "curso prox"
+        "receta receta";
+    }
+    .curso{
+        grid-area: curso;
+    }
+    .prox{
+        grid-area: prox;
+    }
+    .receta{
+        grid-area: receta;
+        .card-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .card{
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media(min-width:$desktop){
+    .cuerpo{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "curso receta"
+        "curso receta"
+        "prox prox";
+    }
+    .curso{
+        grid-area: curso;
+    }
+    .prox{
+        grid-area: prox;
+    }
+    .receta{
+        grid-area: receta;
+        .card-flex{
+            display: flex;
+        }
+    }
+    
+}
+

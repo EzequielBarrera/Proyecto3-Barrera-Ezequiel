@@ -1,7 +1,10 @@
 // FONTS
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 $fuenteTitulo: "Dancing Script", cursive;
+$fuenteGral: "Josefin Sans", sans-serif;
 
 // COLOR
 $fondo-color-logo: gray;
@@ -11,3 +14,4 @@ $mobile: 320px;
 $tablet: 768px;
 $laptop: 1023px;
 $desktop: 1440px;
+$deskt4k:2560px

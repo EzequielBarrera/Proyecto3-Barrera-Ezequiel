@@ -1,0 +1,49 @@
+body {
+    main {
+        h1 {
+            font-family: $fuenteTitulo;
+        }
+
+        .cuerpo {
+
+
+            .card {
+                @extend .card;
+                background-color: map-get($colores , color-nav);
+
+                .img-card {
+                    width: 100%;
+                    height: auto;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                .cuerpo-card {
+                    p {
+                        text-align: center;
+                    }
+
+                    a {
+                        button {
+                            width: 100%;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            background-color: beige;
+                        }
+                    }
+                }
+            }
+
+            .card-cont {
+                @extend .card;
+                padding: 20px;
+
+                .bg-color {
+                    background-color: beige;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+    }
+}
