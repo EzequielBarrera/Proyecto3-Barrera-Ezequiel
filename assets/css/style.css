@@ -103,7 +103,7 @@ h2, h3, h4 {
     justify-content: space-between;
     align-items: center;
   }
-  .receta .card-flex .card, .receta .card-flex body main .cuerpo .card-cont, body main .cuerpo .receta .card-flex .card-cont {
+  .receta .card-flex .card, .receta .card-flex body .visitanos .card-cont, body .visitanos .receta .card-flex .card-cont, .receta .card-flex body main .cuerpo .card-cont, body main .cuerpo .receta .card-flex .card-cont {
     margin: 10px;
   }
 }
@@ -145,6 +145,27 @@ h2, h3, h4 {
     width: 50%;
   }
 }
+@media (min-width: 1023px) {
+  body .visitanos .card-flex {
+    display: flex;
+  }
+  body .visitanos .card-flex .card-p {
+    margin-left: 20px;
+    padding: 59px;
+  }
+}
+@media (min-width: 1440px) {
+  body .visitanos {
+    padding: 0 3rem;
+  }
+  body .visitanos .invitacion {
+    display: flex;
+  }
+  body .visitanos .invitacion .card, body .visitanos .invitacion .card-cont {
+    margin: 5px;
+    height: 230px;
+  }
+}
 .logo, body header .nav-desktop .nav-dt-cont .logo-cont a .logo-dt, body header .nav-bootstrap .navbar .nav-cont .logo {
   border: 2px solid black;
   background-color: gray;
@@ -159,7 +180,7 @@ h2, h3, h4 {
   background-color: rgba(245, 245, 220, 0.37);
 }
 
-.card, body main .cuerpo .card-cont, body main .cuerpo .card {
+.card, body .visitanos .card-cont, body .visitanos .card, body main .cuerpo .card-cont, body main .cuerpo .card {
   width: 100%;
   height: fit-content;
   border: 2px solid black;
@@ -225,6 +246,27 @@ body main .contacto .contacto-form .sub-btn input {
   border-radius: 10px;
   background-color: rgb(255, 192, 203);
   border: none;
+}
+
+body .visitanos .card, body .visitanos .card-cont, body .visitanos main .cuerpo .card, body .visitanos main .cuerpo .card-cont, body main .cuerpo .visitanos .card, body main .cuerpo .visitanos .card-cont {
+  background-color: rgb(255, 192, 203);
+  padding: 15px;
+}
+body .visitanos .card-cont .card ul, body .visitanos .card-cont .card-cont ul {
+  padding: 0 10px;
+}
+body .visitanos .card-cont .card ul li, body .visitanos .card-cont .card-cont ul li {
+  list-style: circle;
+}
+body .visitanos .card-cont a button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: beige;
+}
+body .visitanos .card-cont button:hover {
+  background-color: rgba(220, 20, 60, 0.377);
+  color: white;
+  transition: all ease 0.1s;
 }
 
 body header .nav-bootstrap .navbar {
