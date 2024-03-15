@@ -168,3 +168,39 @@
         }
     }
 }
+
+// RECETARIO
+@media(min-width:$laptop){
+    body{
+        .recetario{
+            padding: 0 50px;
+            .receta-cont{
+                .cont-flex{
+                    display: flex;
+                    .izq, .der{
+                        width: 50%;
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$desktop){
+    body{
+        .recetario{
+            .receta-cont{
+                margin: 0 150px;
+                .cont-flex{
+                    .izq{
+                        width: 40%;
+                    }
+                    .der{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

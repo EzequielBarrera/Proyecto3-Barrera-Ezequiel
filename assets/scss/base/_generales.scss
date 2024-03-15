@@ -34,7 +34,7 @@ ul{
 
 // TITULOS
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4{
     text-decoration: underline;
     text-align: center;
 }
@@ -50,3 +50,7 @@ h2, h3, h4{
     padding: 5px;
 }
 
+// titulo para acompañar texto
+h6{
+    margin-top: 5px;
+}

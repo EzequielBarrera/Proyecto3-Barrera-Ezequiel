@@ -1,0 +1,26 @@
+body{
+    .recetario{
+        .receta-cont{
+            .card{
+                .img-card{
+                    border-radius: 10px;
+                }
+            }
+            .ingr{
+                ul{
+                    li{
+                        list-style: circle;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            .steps{
+                ol{
+                    li{
+                        margin: 25px 0;
+                    }
+                }
+            }
+        }
+    }
+}
