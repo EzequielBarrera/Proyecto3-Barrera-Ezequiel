@@ -204,3 +204,67 @@
         }
     }
 }
+
+// CAMPUS
+@media(min-width:$desktop){
+    body{
+        .campus{
+            margin: 0 150px;
+            .card-flex{
+                display:flex;
+                .izq{
+                    width: 70%;
+                    margin: 25px;
+                }
+                .der{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
+
+// RRHH
+@media(min-width:$tablet){
+    body{
+        .rrhh{
+            .card-flex{
+                display: flex;
+                .izq{
+                    width: 65%;
+                    margin: 25px;
+                    h2{
+                        text-align: center;
+                    }
+                    .izq-cont{
+                        display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: repeat(5, 1fr);
+                    grid-gap: 5px;
+                    }
+                }
+                .der{
+                    width: 35%;
+                    margin: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$desktop){
+    body{
+        .rrhh{
+            .card-flex{
+                margin: 0 50px;
+                .izq{
+                    .izq-cont{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 1fr 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
