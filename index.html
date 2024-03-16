@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./multimedia/img/favicon.ico" type="image/x-icon">
     <title>Pastelería de Osvaldo | Inicio</title>
+    <meta name="description"
+        content="El equipo de Pastelería de Osvaldo brinda servicios tanto educativos como laborales mientras invita a que aprendas sus recetas únicas y fáciles.">
+    <meta name="keywords" content="Pastelería, Servicios, Educativo, Laboral, Recetas, Postres">
 </head>
 
 <body>
+    <!-- INICIO HEADER -->
     <header>
         <div class="nav-bootstrap">
             <nav class="navbar fixed-top">
@@ -98,7 +102,7 @@
         </div>
         <div class="nav-desktop">
             <nav class="nav-dt-cont">
-                <div class="logo-cont">
+                <div class="logo-cont logo-anim">
                     <a href="./index.html">
                         <img class="logo-dt" src="./multimedia/img/logo.webp" alt="logo">
                     </a>
@@ -125,6 +129,8 @@
             </nav>
         </div>
     </header>
+    <!-- FIN HEADER -->
+    <!-- INICIO MAIN -->
     <main id="cuerpo">
         <h1>¡Bienvenidos!</h1>
         <hr>
@@ -144,7 +150,7 @@
             <div class="card-cont receta">
                 <h3>Intentalos en tu casa</h3>
                 <div class="card-flex">
-                    <div class="card">
+                    <div class="card animation-1">
                         <img class="img-card" src="./multimedia/img/berlinas-1.webp" alt="postre-de-berlinas">
                         <div class="cuerpo-card bg-color">
                             <h4>Berlinas</h4>
@@ -155,7 +161,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card animation-2">
                         <img class="img-card" src="./multimedia/img/chocotorta-1.webp" alt="postre-de-chocotorta">
                         <div class="cuerpo-card bg-color">
                             <h4>Chocotorta</h4>
@@ -166,7 +172,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card animation-3">
                         <img class="img-card" src="./multimedia/img/flan-(1).webp" alt="postre-de-flan">
                         <div class="cuerpo-card bg-color">
                             <h4>Tarta de Flan</h4>
@@ -197,8 +203,37 @@
             </div>
         </section>
     </main>
+    <!-- FIN MAIN -->
+    <!-- INICIO FOOTER -->
     <footer id="pie-dt">
         <div class="pie-dt">
+            <div class="pie-dt-sitemap">
+                <h5>Navegación</h5>
+                <ol>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="./pages/locales.html">Locales</a>
+                        <ul>
+                            <li>
+                                <a href="./pages/rrhh.html">Dejanos tu CV</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./pages/campus.html">Cursos</a>
+                        <ul>
+                            <li>
+                                <a href="./pages/recetario.html">Recetario</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
             <div class="pie-dt-contacto">
                 <h5>Contacto</h5>
                 <ul>
@@ -236,8 +271,10 @@
                     </li>
                 </ul>
             </div>
+
         </div>
     </footer>
+    <!-- FIN FOOTER -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

@@ -29,6 +29,13 @@ body {
                 color: white;
                 transition: all ease 0.1s
             }
+            .boton-camp{
+                @include animation(boton-camp, 2s, infinite, 0s, linear);
+            }
+            .boton-cv{
+                @include animation(boton-cv, 2s, infinite, 0s, linear);
+            }
         }
     }
 }
+

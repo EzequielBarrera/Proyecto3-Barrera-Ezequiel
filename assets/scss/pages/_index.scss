@@ -11,6 +11,18 @@ body {
                 @extend .card;
                 background-color: map-get($colores , color-nav);
 
+                .animation-1 {
+                    @include animation(card-index, 4s, infinite, 3s, linear)
+                }
+
+                .animation-2 {
+                    @include animation(card-index, 4s, infinite, 8s, linear)
+                }
+
+                .animation-3 {
+                    @include animation(card-index, 4s, infinite, 13s, linear)
+                }
+
                 .img-card {
                     width: 100%;
                     height: auto;

@@ -59,6 +59,7 @@ body {
                 align-items: center;
 
                 .logo-cont {
+                    
                     a {
                         .logo-dt {
 
@@ -72,6 +73,9 @@ body {
                             transition: all ease 0.5s;
                         }
                     }
+                }
+                .logo-anim{
+                    @include animation(logo, 1s, 1, 120s, linear)
                 }
 
                 .nav-dt-title {
