@@ -50,6 +50,12 @@
     }
 }
 
+@media(max-width:$tablet) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
 // INDEX
 @media(min-width:$tablet) and (max-width:$desktop) {
     .cuerpo {
@@ -112,38 +118,66 @@
 }
 
 // CONTACTO
+@media(min-width:$tablet) {
+    body {
+        .contacto {
+            .info-contacto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
 @media(min-width:$laptop) {
     h1 {
         font-size: 50px;
     }
 
-    .contacto {
-        padding: 0 50px;
-        display: flex;
+    body {
+        .contacto {
+            margin: 50px;
+            display: flex;
 
-        .info-contacto {
-            width: 50%;
 
-            p {
-                font-size: 20px;
-                letter-spacing: 5px;
+            .info-contacto {
+                width: 30%;
+                margin-top: 50px;
+
+                p {
+                    font-size: 20px;
+                    letter-spacing: 5px;
+                }
             }
-        }
 
-        .contacto-form {
-            width: 50%;
+            .contacto-form {
+                width: 70%;
+                margin-left: 25px;
+            }
         }
     }
 }
 
-
+@media(min-width:$desktop){
+    body{
+        .contacto{
+            padding: 0 50px;
+            .info-contacto{
+                margin-top: 150px;
+            }
+        }
+    }
+}
 // LOCALES
+
 @media(min-width:$laptop) {
     body {
         .visitanos {
             .card-flex {
                 display: flex;
-                .card-p{
+
+                .card-p {
                     margin-left: 20px;
                     padding: 59px;
                 }
@@ -154,13 +188,15 @@
 
 }
 
-@media(min-width:$desktop){
-    body{
-        .visitanos{
+@media(min-width:$desktop) {
+    body {
+        .visitanos {
             padding: 0 3rem;
-            .invitacion{
+
+            .invitacion {
                 display: flex;
-                .card{
+
+                .card {
                     margin: 5px;
                     height: 230px;
                 }
@@ -170,14 +206,17 @@
 }
 
 // RECETARIO
-@media(min-width:$laptop){
-    body{
-        .recetario{
+@media(min-width:$laptop) {
+    body {
+        .recetario {
             padding: 0 50px;
-            .receta-cont{
-                .cont-flex{
+
+            .receta-cont {
+                .cont-flex {
                     display: flex;
-                    .izq, .der{
+
+                    .izq,
+                    .der {
                         width: 50%;
                         padding: 15px;
                     }
@@ -187,16 +226,18 @@
     }
 }
 
-@media(min-width:$desktop){
-    body{
-        .recetario{
-            .receta-cont{
+@media(min-width:$desktop) {
+    body {
+        .recetario {
+            .receta-cont {
                 margin: 0 150px;
-                .cont-flex{
-                    .izq{
+
+                .cont-flex {
+                    .izq {
                         width: 40%;
                     }
-                    .der{
+
+                    .der {
                         width: 60%;
                     }
                 }
@@ -206,17 +247,20 @@
 }
 
 // CAMPUS
-@media(min-width:$desktop){
-    body{
-        .campus{
+@media(min-width:$desktop) {
+    body {
+        .campus {
             margin: 0 150px;
-            .card-flex{
-                display:flex;
-                .izq{
+
+            .card-flex {
+                display: flex;
+
+                .izq {
                     width: 70%;
                     margin: 25px;
                 }
-                .der{
+
+                .der {
                     width: 30%;
                 }
             }
@@ -225,25 +269,29 @@
 }
 
 // RRHH
-@media(min-width:$tablet){
-    body{
-        .rrhh{
-            .card-flex{
+@media(min-width:$tablet) {
+    body {
+        .rrhh {
+            .card-flex {
                 display: flex;
-                .izq{
+
+                .izq {
                     width: 65%;
                     margin: 25px;
-                    h2{
+
+                    h2 {
                         text-align: center;
                     }
-                    .izq-cont{
+
+                    .izq-cont {
                         display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: repeat(5, 1fr);
-                    grid-gap: 5px;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: repeat(5, 1fr);
+                        grid-gap: 5px;
                     }
                 }
-                .der{
+
+                .der {
                     width: 35%;
                     margin: 25px;
                 }
@@ -252,13 +300,14 @@
     }
 }
 
-@media(min-width:$desktop){
-    body{
-        .rrhh{
-            .card-flex{
+@media(min-width:$desktop) {
+    body {
+        .rrhh {
+            .card-flex {
                 margin: 0 50px;
-                .izq{
-                    .izq-cont{
+
+                .izq {
+                    .izq-cont {
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
                         grid-template-rows: 1fr 1fr 1fr;

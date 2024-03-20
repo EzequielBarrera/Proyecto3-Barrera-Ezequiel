@@ -18,22 +18,15 @@ body {
                         font-family: $fuenteTitulo;
 
                         .nav-title {
-                            border: 2px solid black;
+                            border: 2px solid rgba(0, 0, 0, 0.37);
                             padding: 10px;
                             border-radius: 20px;
                             margin-right: 25px;
                             text-align: center;
-                            font-size: 19px;
+                            font-size: 22px;
                             margin-top: 15px;
                         }
                     }
-
-
-                    .oc-bt {
-                        padding: 20px;
-                        margin-right: 50px;
-                    }
-
                     div.offcanvas {
                         .oc-color {
                             background-color: map-get($colores, oc-color);

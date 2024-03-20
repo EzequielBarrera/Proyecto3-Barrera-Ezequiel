@@ -31,7 +31,6 @@ ul {
 }
 
 h1, h2, h3, h4 {
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -61,7 +60,7 @@ h6 {
     display: none;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   .logo, body header .nav-desktop .nav-dt-cont .logo-cont a .logo-dt, body header .nav-bootstrap .navbar .nav-cont .logo {
     transform: scale(1.3);
   }
@@ -87,7 +86,12 @@ h6 {
     justify-content: space-around;
   }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+@media (min-width: 767px) and (max-width: 1440px) {
   .cuerpo {
     display: grid;
     grid-gap: 15px;
@@ -130,23 +134,40 @@ h6 {
     display: flex;
   }
 }
+@media (min-width: 767px) {
+  body .contacto .info-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (min-width: 1023px) {
   h1 {
     font-size: 50px;
   }
-  .contacto {
-    padding: 0 50px;
+  body .contacto {
+    margin: 50px;
     display: flex;
   }
-  .contacto .info-contacto {
-    width: 50%;
+  body .contacto .info-contacto {
+    width: 30%;
+    margin-top: 50px;
   }
-  .contacto .info-contacto p {
+  body .contacto .info-contacto p {
     font-size: 20px;
     letter-spacing: 5px;
   }
-  .contacto .contacto-form {
-    width: 50%;
+  body .contacto .contacto-form {
+    width: 70%;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 1440px) {
+  body .contacto {
+    padding: 0 50px;
+  }
+  body .contacto .info-contacto {
+    margin-top: 150px;
   }
 }
 @media (min-width: 1023px) {
@@ -177,7 +198,8 @@ h6 {
   body .recetario .receta-cont .cont-flex {
     display: flex;
   }
-  body .recetario .receta-cont .cont-flex .izq, body .recetario .receta-cont .cont-flex .der {
+  body .recetario .receta-cont .cont-flex .izq,
+  body .recetario .receta-cont .cont-flex .der {
     width: 50%;
     padding: 15px;
   }
@@ -208,7 +230,7 @@ h6 {
     width: 30%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   body .rrhh .card-flex {
     display: flex;
   }
@@ -248,7 +270,7 @@ h6 {
 }
 
 .borde-link, body .pie-dt .pie-dt-serv ul li, body header .nav-desktop .nav-dt-cont .list ul li a {
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.288);
   padding: 15px;
   border-radius: 30px;
   background-color: rgba(245, 245, 220, 0.37);
@@ -257,7 +279,7 @@ h6 {
 .card, body main .rrhh .card, body main .rrhh .cuerpo .card-cont, body main .cuerpo .rrhh .card-cont, body main .rrhh .visitanos .card-cont, body .visitanos main .rrhh .card-cont, body main .campus .visitanos .rrhh .card-cont, body main .cuerpo .rrhh .card, body main .rrhh .cuerpo .card, body main .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .card-cont, body main .cuerpo .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .cuerpo .card-cont, body .visitanos main .rrhh .card, body main .rrhh .visitanos .card, body main .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .cuerpo .rrhh .card, body .visitanos main .rrhh .cuerpo .card, body .visitanos main .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .visitanos .rrhh .cuerpo .card-cont, body main .cuerpo .visitanos .rrhh .card, body main .rrhh .cuerpo .visitanos .card, body main .cuerpo .visitanos .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .card-cont, body main .campus .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .rrhh .card, body .visitanos main .rrhh .cuerpo .visitanos .card, body .visitanos main .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card-cont, body main .campus .rrhh .card, body main .rrhh .campus .card, body main .campus .rrhh .cuerpo .card-cont, body main .rrhh .cuerpo .campus .card-cont, body main .campus .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .card-cont, body main .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .rrhh .card-cont, body .visitanos main .rrhh .campus .card-cont, body main .cuerpo .campus .rrhh .card, body main .rrhh .cuerpo .campus .card, body main .cuerpo .campus .rrhh .card-cont, body main .cuerpo .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .cuerpo .campus .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .campus .card-cont, body main .campus .cuerpo .rrhh .card, body main .rrhh .campus .cuerpo .card, body main .rrhh .campus .cuerpo .card-cont, body main .campus .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .cuerpo .card-cont, body .visitanos main .campus .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .campus .cuerpo .card-cont, body .visitanos main .campus .rrhh .card, body .visitanos main .rrhh .campus .card, body .visitanos main .campus .rrhh .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .campus .card-cont, body .visitanos main .campus .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .card, body main .rrhh .campus .visitanos .card, body main .rrhh .cuerpo .campus .visitanos .card-cont, body main .campus .visitanos .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .visitanos .card-cont, body main .rrhh .campus .visitanos .card-cont, body main .campus .visitanos main .rrhh .card-cont, body .visitanos main .cuerpo .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .campus .card, body .visitanos main .cuerpo .campus .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .campus .cuerpo .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .card, body .visitanos main .campus .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .campus .cuerpo .card-cont, body main .cuerpo .visitanos .campus .rrhh .card, body main .rrhh .cuerpo .visitanos .campus .card, body main .rrhh .cuerpo .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus .rrhh .card-cont, body main .cuerpo .rrhh .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus main .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .campus .card-cont, body main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body main .campus .cuerpo .visitanos .rrhh .card, body main .rrhh .campus .cuerpo .visitanos .card, body main .campus .rrhh .cuerpo .visitanos .card-cont, body main .rrhh .campus .cuerpo .visitanos .card-cont, body main .campus .cuerpo .visitanos main .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card-cont, body .visitanos main .cuerpo .rrhh .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .visitanos .card, body .visitanos main .campus .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .rrhh .campus .cuerpo .visitanos .card-cont, body main .campus .card, body main .campus .rrhh .card, body main .rrhh .campus .card, body main .campus .rrhh .cuerpo .card-cont, body main .rrhh .cuerpo .campus .card-cont, body main .campus .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .card-cont, body main .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .rrhh .card-cont, body .visitanos main .rrhh .campus .card-cont, body main .campus .visitanos .rrhh .card-cont, body main .campus .cuerpo .rrhh .card, body main .cuerpo .rrhh .campus .card, body main .campus .rrhh .cuerpo .card, body main .rrhh .cuerpo .campus .card, body main .campus .cuerpo .rrhh .visitanos .card-cont, body main .cuerpo .rrhh .visitanos .campus .card-cont, body main .campus .rrhh .visitanos .cuerpo .card-cont, body main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .campus .cuerpo .rrhh .card-cont, body .visitanos main .cuerpo .rrhh .campus .card-cont, body .visitanos main .campus .rrhh .cuerpo .card-cont, body .visitanos main .rrhh .cuerpo .campus .card-cont, body main .cuerpo .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .cuerpo .card-cont, body .visitanos main .campus .rrhh .card, body .visitanos main .rrhh .campus .card, body main .campus .rrhh .visitanos .card, body main .rrhh .visitanos .campus .card, body main .campus .rrhh .cuerpo .visitanos .card-cont, body main .rrhh .cuerpo .visitanos .campus .card-cont, body .visitanos main .campus .cuerpo .rrhh .card, body .visitanos main .cuerpo .rrhh .campus .card, body .visitanos main .campus .rrhh .cuerpo .card, body .visitanos main .rrhh .cuerpo .campus .card, body .visitanos main .campus .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .cuerpo .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .cuerpo .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .visitanos .rrhh .cuerpo .card-cont, body main .campus .cuerpo .visitanos .rrhh .card, body main .cuerpo .visitanos .rrhh .campus .card, body main .campus .rrhh .cuerpo .visitanos .card, body main .rrhh .cuerpo .visitanos .campus .card, body main .campus .cuerpo .visitanos .rrhh .card-cont, body main .cuerpo .visitanos .rrhh .campus .card-cont, body main .campus .cuerpo .visitanos main .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .campus .card-cont, body main .campus .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card, body .visitanos main .cuerpo .visitanos .rrhh .campus .card, body .visitanos main .campus .rrhh .cuerpo .visitanos .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card, body .visitanos main .campus .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .rrhh .cuerpo .visitanos .campus .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .rrhh .campus .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card-cont, body main .campus .rrhh .card, body main .rrhh .campus .card, body main .campus .rrhh .cuerpo .card-cont, body main .rrhh .cuerpo .campus .card-cont, body main .campus .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .card-cont, body main .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .rrhh .card-cont, body .visitanos main .rrhh .campus .card-cont, body main .cuerpo .campus .rrhh .card, body main .rrhh .cuerpo .campus .card, body main .cuerpo .campus .rrhh .card-cont, body main .cuerpo .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .cuerpo .campus .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .campus .card-cont, body main .campus .cuerpo .rrhh .card, body main .rrhh .campus .cuerpo .card, body main .rrhh .campus .cuerpo .card-cont, body main .campus .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .cuerpo .card-cont, body .visitanos main .campus .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .campus .cuerpo .card-cont, body .visitanos main .campus .rrhh .card, body .visitanos main .rrhh .campus .card, body .visitanos main .campus .rrhh .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .campus .card-cont, body .visitanos main .campus .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .card, body main .rrhh .campus .visitanos .card, body main .rrhh .cuerpo .campus .visitanos .card-cont, body main .campus .visitanos .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .visitanos .card-cont, body main .rrhh .campus .visitanos .card-cont, body main .campus .visitanos main .rrhh .card-cont, body .visitanos main .cuerpo .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .campus .card, body .visitanos main .cuerpo .campus .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .campus .cuerpo .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .card, body .visitanos main .campus .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .campus .cuerpo .card-cont, body main .cuerpo .visitanos .campus .rrhh .card, body main .rrhh .cuerpo .visitanos .campus .card, body main .rrhh .cuerpo .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus .rrhh .card-cont, body main .cuerpo .rrhh .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus main .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .campus .card-cont, body main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body main .campus .cuerpo .visitanos .rrhh .card, body main .rrhh .campus .cuerpo .visitanos .card, body main .campus .rrhh .cuerpo .visitanos .card-cont, body main .rrhh .campus .cuerpo .visitanos .card-cont, body main .campus .cuerpo .visitanos main .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card-cont, body .visitanos main .cuerpo .rrhh .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .visitanos .card, body .visitanos main .campus .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .rrhh .campus .cuerpo .visitanos .card-cont, body main .campus .visitanos .card-cont, body .visitanos main .campus .card-cont, body .visitanos .card-cont, body .visitanos .card, body .visitanos main .rrhh .card, body main .rrhh .visitanos .card, body .visitanos main .rrhh .cuerpo .card-cont, body main .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .card-cont, body .visitanos main .rrhh .card-cont, body main .campus .visitanos .rrhh .card-cont, body .visitanos main .cuerpo .rrhh .card, body main .cuerpo .rrhh .visitanos .card, body .visitanos main .rrhh .cuerpo .card, body main .rrhh .cuerpo .visitanos .card, body main .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .card-cont, body main .cuerpo .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .cuerpo .card-cont, body .visitanos main .rrhh .card, body main .rrhh .visitanos .card, body main .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .cuerpo .rrhh .card, body .visitanos main .rrhh .cuerpo .card, body .visitanos main .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .visitanos .rrhh .cuerpo .card-cont, body main .cuerpo .visitanos .rrhh .card, body main .rrhh .cuerpo .visitanos .card, body main .cuerpo .visitanos .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .card-cont, body main .campus .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .rrhh .card, body .visitanos main .rrhh .cuerpo .visitanos .card, body .visitanos main .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .campus .rrhh .card, body main .campus .rrhh .visitanos .card, body .visitanos main .rrhh .campus .card, body main .rrhh .campus .visitanos .card, body .visitanos main .campus .rrhh .cuerpo .card-cont, body main .campus .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .rrhh .cuerpo .campus .card-cont, body main .rrhh .cuerpo .campus .visitanos .card-cont, body .visitanos main .campus .cuerpo .rrhh .card-cont, body main .campus .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .cuerpo .rrhh .campus .card-cont, body main .cuerpo .rrhh .campus .visitanos .card-cont, body main .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .rrhh .card-cont, body .visitanos main .rrhh .campus .card-cont, body .visitanos main .cuerpo .campus .rrhh .card, body main .cuerpo .campus .rrhh .visitanos .card, body .visitanos main .rrhh .cuerpo .campus .card, body main .rrhh .cuerpo .campus .visitanos .card, body .visitanos main .cuerpo .campus .rrhh .card-cont, body main .cuerpo .campus .rrhh .visitanos .card-cont, body main .cuerpo .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .cuerpo .campus .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .campus .card-cont, body .visitanos main .campus .cuerpo .rrhh .card, body main .campus .cuerpo .rrhh .visitanos .card, body .visitanos main .rrhh .campus .cuerpo .card, body main .rrhh .campus .cuerpo .visitanos .card, body .visitanos main .rrhh .campus .cuerpo .card-cont, body main .rrhh .campus .cuerpo .visitanos .card-cont, body main .campus .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .cuerpo .card-cont, body .visitanos main .campus .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .campus .cuerpo .card-cont, body .visitanos main .campus .rrhh .card, body .visitanos main .rrhh .campus .card, body .visitanos main .campus .rrhh .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .campus .card-cont, body .visitanos main .campus .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .campus .card-cont, body .visitanos main .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .card, body main .rrhh .campus .visitanos .card, body main .rrhh .cuerpo .campus .visitanos .card-cont, body main .campus .visitanos .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .visitanos .card-cont, body main .rrhh .campus .visitanos .card-cont, body main .campus .visitanos main .rrhh .card-cont, body .visitanos main .cuerpo .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .campus .card, body .visitanos main .cuerpo .campus .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .campus .cuerpo .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .card, body .visitanos main .campus .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .campus .cuerpo .card-cont, body main .cuerpo .visitanos .campus .rrhh .card, body main .rrhh .cuerpo .visitanos .campus .card, body main .rrhh .cuerpo .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus .rrhh .card-cont, body main .cuerpo .rrhh .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus main .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .campus .card-cont, body main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body main .campus .cuerpo .visitanos .rrhh .card, body main .rrhh .campus .cuerpo .visitanos .card, body main .campus .rrhh .cuerpo .visitanos .card-cont, body main .rrhh .campus .cuerpo .visitanos .card-cont, body main .campus .cuerpo .visitanos main .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card-cont, body .visitanos main .cuerpo .rrhh .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .visitanos .card, body .visitanos main .campus .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .rrhh .campus .cuerpo .visitanos .card-cont, body main .cuerpo .card-cont, body main .cuerpo .card, body main .cuerpo .rrhh .card, body main .rrhh .cuerpo .card, body main .rrhh .cuerpo .card-cont, body main .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .card-cont, body main .cuerpo .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .cuerpo .card-cont, body main .cuerpo .rrhh .card, body main .rrhh .cuerpo .card, body main .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .card-cont, body main .cuerpo .campus .visitanos .rrhh .card-cont, body main .campus .visitanos .rrhh .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .card, body .visitanos main .rrhh .cuerpo .card, body main .cuerpo .rrhh .visitanos .card, body main .rrhh .visitanos .cuerpo .card, body main .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .cuerpo .rrhh .card, body .visitanos main .rrhh .cuerpo .card, body .visitanos main .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .visitanos .rrhh .cuerpo .card-cont, body main .cuerpo .visitanos .rrhh .card, body main .rrhh .cuerpo .visitanos .card, body main .cuerpo .visitanos .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .card-cont, body main .campus .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .rrhh .card, body .visitanos main .rrhh .cuerpo .visitanos .card, body .visitanos main .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .cuerpo .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card-cont, body main .cuerpo .campus .rrhh .card, body main .campus .rrhh .cuerpo .card, body main .cuerpo .rrhh .campus .card, body main .rrhh .campus .cuerpo .card, body main .campus .rrhh .cuerpo .card-cont, body main .rrhh .cuerpo .campus .card-cont, body main .campus .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .card-cont, body main .cuerpo .campus .rrhh .visitanos .card-cont, body main .campus .rrhh .visitanos .cuerpo .card-cont, body main .cuerpo .rrhh .visitanos .campus .card-cont, body main .rrhh .visitanos .campus .cuerpo .card-cont, body .visitanos main .cuerpo .campus .rrhh .card-cont, body .visitanos main .campus .rrhh .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .campus .card-cont, body .visitanos main .rrhh .campus .cuerpo .card-cont, body main .cuerpo .campus .rrhh .card, body main .rrhh .cuerpo .campus .card, body main .cuerpo .campus .rrhh .card-cont, body main .cuerpo .campus .rrhh .visitanos .card-cont, body main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .cuerpo .campus .rrhh .card-cont, body .visitanos main .rrhh .cuerpo .campus .card-cont, body main .campus .cuerpo .rrhh .card, body main .rrhh .campus .cuerpo .card, body main .rrhh .campus .cuerpo .card-cont, body main .campus .cuerpo .rrhh .visitanos .card-cont, body main .rrhh .visitanos .campus .cuerpo .card-cont, body .visitanos main .campus .cuerpo .rrhh .card-cont, body .visitanos main .rrhh .campus .cuerpo .card-cont, body .visitanos main .cuerpo .campus .rrhh .card, body .visitanos main .campus .rrhh .cuerpo .card, body .visitanos main .cuerpo .rrhh .campus .card, body .visitanos main .rrhh .campus .cuerpo .card, body .visitanos main .campus .rrhh .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .campus .card-cont, body .visitanos main .cuerpo .campus .rrhh .visitanos .card-cont, body .visitanos main .campus .rrhh .visitanos .cuerpo .card-cont, body .visitanos main .cuerpo .rrhh .visitanos .campus .card-cont, body .visitanos main .rrhh .visitanos .campus .cuerpo .card-cont, body .visitanos main .cuerpo .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .visitanos .rrhh .cuerpo .card-cont, body main .cuerpo .campus .visitanos .rrhh .card, body main .campus .visitanos .rrhh .cuerpo .card, body main .cuerpo .rrhh .campus .visitanos .card, body main .rrhh .campus .visitanos .cuerpo .card, body main .rrhh .cuerpo .campus .visitanos .card-cont, body main .campus .visitanos .cuerpo .rrhh .card-cont, body main .cuerpo .rrhh .campus .visitanos .card-cont, body main .cuerpo .rrhh .campus .visitanos .card-cont, body main .rrhh .campus .visitanos .cuerpo .card-cont, body main .cuerpo .campus .visitanos main .rrhh .card-cont, body main .campus .visitanos main .rrhh .cuerpo .card-cont, body .visitanos main .cuerpo .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .campus .card, body .visitanos main .cuerpo .campus .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .cuerpo .campus .card-cont, body .visitanos main .campus .cuerpo .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .card, body .visitanos main .campus .cuerpo .rrhh .visitanos .card-cont, body .visitanos main .rrhh .visitanos .campus .cuerpo .card-cont, body main .cuerpo .visitanos .campus .rrhh .card, body main .rrhh .cuerpo .visitanos .campus .card, body main .rrhh .cuerpo .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus .rrhh .card-cont, body main .cuerpo .rrhh .visitanos .campus .card-cont, body main .cuerpo .visitanos .campus main .rrhh .card-cont, body main .cuerpo .visitanos main .rrhh .campus .card-cont, body main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body main .campus .cuerpo .visitanos .rrhh .card, body main .rrhh .campus .cuerpo .visitanos .card, body main .campus .rrhh .cuerpo .visitanos .card-cont, body main .rrhh .campus .cuerpo .visitanos .card-cont, body main .campus .cuerpo .visitanos main .rrhh .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card, body .visitanos main .rrhh .cuerpo .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .rrhh .card-cont, body .visitanos main .cuerpo .rrhh .visitanos .campus .card-cont, body .visitanos main .cuerpo .visitanos .campus .visitanos .rrhh .card-cont, body .visitanos main .campus .cuerpo .visitanos .rrhh .card, body .visitanos main .rrhh .campus .cuerpo .visitanos .card, body .visitanos main .campus .rrhh .cuerpo .visitanos .card-cont, body .visitanos main .rrhh .campus .cuerpo .visitanos .card-cont {
   width: 100%;
   height: fit-content;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.377);
   border-radius: 10px;
   margin: 1rem auto;
 }
@@ -435,7 +457,7 @@ body main .cuerpo .card-cont .bg-color {
 }
 
 body main .contacto {
-  margin: 20px 0;
+  margin: 20px;
 }
 body main .contacto .contacto-form .form {
   margin-top: 20px;
@@ -447,6 +469,7 @@ body main .contacto .contacto-form .form input, body main .contacto .contacto-fo
   outline: none;
   border: none;
   border-bottom: 2px solid rgb(255, 192, 203);
+  padding-left: 10px;
 }
 body main .contacto .contacto-form .sub-btn {
   display: flex;
@@ -575,17 +598,13 @@ body header .nav-bootstrap .navbar .nav-cont .link-title {
   font-family: "Dancing Script", cursive;
 }
 body header .nav-bootstrap .navbar .nav-cont .link-title .nav-title {
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.37);
   padding: 10px;
   border-radius: 20px;
   margin-right: 25px;
   text-align: center;
-  font-size: 19px;
+  font-size: 22px;
   margin-top: 15px;
-}
-body header .nav-bootstrap .navbar .nav-cont .oc-bt {
-  padding: 20px;
-  margin-right: 50px;
 }
 body header .nav-bootstrap .navbar .nav-cont div.offcanvas .oc-color {
   background-color: pink;
