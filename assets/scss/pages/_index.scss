@@ -1,11 +1,8 @@
 body {
     main {
-        h1 {
-            font-family: $fuenteTitulo;
-        }
 
         .cuerpo {
-
+            margin: 20px;
 
             .card {
                 @extend .card;
@@ -62,6 +59,10 @@ body {
                     border-bottom-right-radius: 10px;
                 }
             }
+            .prox{
+                height: fit-content;
+            }
+            margin-bottom: $m100;
         }
     }
 }

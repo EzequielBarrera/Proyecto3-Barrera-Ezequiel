@@ -1,5 +1,5 @@
 // CUERPO MARGIN TOP
-@media(max-width:425px) {
+@media(max-width:$laptop) {
     #cuerpo {
         margin-top: 150px;
     }
@@ -39,6 +39,7 @@
     .nav-dt-cont {
         display: flex;
         justify-content: space-evenly;
+        margin-left: 20px;
     }
 }
 
@@ -58,33 +59,47 @@
 
 // INDEX
 @media(min-width:$tablet) and (max-width:$desktop) {
-    .cuerpo {
-        display: grid;
-        grid-gap: 15px;
-        grid-template-areas:
-            "curso prox"
-            "receta receta";
-    }
+    body {
+        .cuerpo {
+            display: grid;
+            justify-content: center;
+            grid-gap: 30px;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "curso receta"
+                "prox receta";
 
-    .curso {
-        grid-area: curso;
-    }
-
-    .prox {
-        grid-area: prox;
-    }
-
-    .receta {
-        grid-area: receta;
-
-        .card-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .card {
-                margin: 10px;
+            .curso {
+                grid-area: curso;
+                height: fit-content;
+                margin-right: 15px;
             }
+
+            .receta {
+                grid-area: receta;
+
+                .card-flex {
+                    display: grid;
+                    align-items: center;
+                }
+            }
+
+            .prox {
+                grid-area: prox;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media(min-width:$laptop) {
+    body {
+        .cuerpo {
+            padding: 0 50px;
         }
     }
 }
@@ -95,8 +110,10 @@
         grid-gap: 10px;
         grid-template-areas:
             "curso receta"
-            "curso receta"
-            "prox prox";
+            "curso prox";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+        grid-gap: 50px;
     }
 
     .curso {
@@ -112,95 +129,156 @@
 
         .card-flex {
             display: flex;
+
+            .card {
+                margin: 10px;
+            }
         }
     }
 
 }
 
 // CONTACTO
-@media(min-width:$tablet) {
+@media(min-width:$tablet) and (max-width:$laptop) {
     body {
         .contacto {
-            .info-contacto {
-                display: flex;
-                flex-direction: column;
+            .info-cont {
+                display: grid;
+                grid-template-columns: 50% 50%;
                 align-items: center;
+
+                .info-contacto {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
+
         }
     }
 }
 
 @media(min-width:$laptop) {
-    h1 {
-        font-size: 50px;
-    }
-
     body {
+        h1 {
+            font-size: 50px;
+        }
+
         .contacto {
-            margin: 50px;
-            display: flex;
+            display: grid;
 
+            .info-cont {
+                display: grid;
+                grid-template-columns: 70% 30%;
+                align-items: center;
+                margin: 25px;
 
-            .info-contacto {
-                width: 30%;
-                margin-top: 50px;
-
-                p {
-                    font-size: 20px;
-                    letter-spacing: 5px;
+                .info-contacto {
+                    text-align: center;
                 }
             }
 
             .contacto-form {
-                width: 70%;
-                margin-left: 25px;
+                margin: 25px;
             }
         }
     }
-}
-
-@media(min-width:$desktop){
-    body{
-        .contacto{
-            padding: 0 50px;
-            .info-contacto{
-                margin-top: 150px;
-            }
-        }
-    }
-}
-// LOCALES
-
-@media(min-width:$laptop) {
-    body {
-        .visitanos {
-            .card-flex {
-                display: flex;
-
-                .card-p {
-                    margin-left: 20px;
-                    padding: 59px;
-                }
-            }
-        }
-
-    }
-
 }
 
 @media(min-width:$desktop) {
     body {
-        .visitanos {
-            padding: 0 3rem;
+        .contacto {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
+            .info-cont {
+                grid-template-columns: 1fr;
+
+                .info-contacto {
+                    text-align: start;
+                }
+            }
+
+            .contacto-form {
+                width: 90%;
+            }
+        }
+    }
+}
+
+// LOCALES
+
+@media(min-width:$tablet) {
+    body {
+        .visitanos {
             .invitacion {
                 display: flex;
 
-                .card {
-                    margin: 5px;
-                    height: 230px;
+                .izq,
+                .der {
+                    margin: 10px;
                 }
             }
+
+            .img-cont {
+                display: flex;
+
+                .izq,
+                .der {
+                    margin: 10px;
+                }
+            }
+
+            .card-cont {
+                .card-flex {
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$laptop) {
+    body {
+        .visitanos {
+            .invitacion {
+                margin: 0 50px;
+
+                .der {
+                    height: auto;
+
+                    p {
+                        margin-top: 35px;
+                    }
+                }
+            }
+
+            .img-cont {
+                margin: 0 50px;
+            }
+
+            .card-cont {
+                .card-flex {
+                    display: grid;
+                    margin: 0 50px;
+
+                    .card-up {
+                        display: flex;
+
+                        .up-l {
+                            height: auto;
+                            justify-content: space-between;
+                            margin-right: 10px;
+                        }
+
+                        .up-r {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
@@ -209,7 +287,7 @@
 @media(min-width:$laptop) {
     body {
         .recetario {
-            padding: 0 50px;
+            margin: $m050;
 
             .receta-cont {
                 .cont-flex {
@@ -247,23 +325,37 @@
 }
 
 // CAMPUS
-@media(min-width:$desktop) {
+@media(min-width:$tablet) {
     body {
         .campus {
-            margin: 0 150px;
+            .titulo {
+                margin: $m050;
+            }
 
             .card-flex {
                 display: flex;
 
                 .izq {
                     width: 70%;
-                    margin: 25px;
+                    margin: 31px;
+                    display: grid;
                 }
 
-                .der {
-                    width: 30%;
+                .flex-der {
+                    padding: 15px ;
+                    display: grid;
+                    grid-template-rows: 1fr;
                 }
+
             }
+        }
+    }
+}
+
+@media(min-width:$desktop){
+    body{
+        .campus{
+            padding: 0 50px;
         }
     }
 }
@@ -273,12 +365,11 @@
     body {
         .rrhh {
             .card-flex {
-                display: flex;
+                display: grid;
+                grid-template-columns: 1fr;
 
                 .izq {
-                    width: 65%;
-                    margin: 25px;
-
+                    margin: 31px;
                     h2 {
                         text-align: center;
                     }
@@ -290,10 +381,29 @@
                         grid-gap: 5px;
                     }
                 }
-
+                .flex-der{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin: 31px;
+                }
                 .der {
-                    width: 35%;
-                    margin: 25px;
+                    height: fit-content;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:$laptop){
+    body{
+        .rrhh{
+            .card-flex{
+                display: flex;
+                .flex-der{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 15px;
                 }
             }
         }
@@ -304,13 +414,18 @@
     body {
         .rrhh {
             .card-flex {
-                margin: 0 50px;
 
                 .izq {
+                    width: 75%;
+
                     .izq-cont {
                         display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
-                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(3, 250px);
+                        .card{
+                            display: flex;
+                            justify-content: space-evenly;
+                        }
                     }
                 }
             }

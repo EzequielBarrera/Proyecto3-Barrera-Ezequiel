@@ -79,14 +79,19 @@ body {
                 .list {
                     ul {
                         margin-bottom: 0;
+                        display: flex;
 
                         li {
-                            display: inline-block;
+                            display: inline-flex;
+                            flex-direction: column;
+                            text-align: center;
                             margin: 20px;
+                            width: 150px;
 
                             a {
                                 @extend .borde-link;
                                 color: black;
+                                max-width: 200px;
                             }
 
                             a:hover {

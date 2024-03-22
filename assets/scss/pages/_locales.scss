@@ -1,21 +1,25 @@
 body {
     .visitanos {
+        margin: 20px;
+
         .card {
             @extend .card;
             background-color: map-get($colores , color-nav);
             padding: 15px
         }
-        .card-cont{
-            @extend .card;
-            padding: 15px;
-            .card{
-                ul{
-                    padding: 0 10px;
-                    li{
+
+        .card-cont {
+            width: 100%;
+            .card {
+                ul {
+                    padding: 0 20px;
+
+                    li {
                         list-style: circle;
                     }
                 }
             }
+
             a {
                 button {
                     width: 100%;
@@ -29,13 +33,37 @@ body {
                 color: white;
                 transition: all ease 0.1s
             }
-            .boton-camp{
+
+            .boton-camp {
                 @include animation(boton-camp, 2s, infinite, 0s, linear);
             }
-            .boton-cv{
-                @include animation(boton-cv, 2s, infinite, 0s, linear);
+
+            .boton-cv {
+                @include animation(boton-camp, 2s, infinite, 0s, linear);
+            }
+
+            .boton-receta{
+                @include animation(boton-camp, 2s, infinite, 0s, linear)
             }
         }
+
+        margin-bottom: $m100;
+    }
+
+    .img-cont {
+        .card-img {
+            width: 100%;
+            height: fit-content;
+            border: 2px solid rgba(0, 0, 0, 0.377);
+            border-radius: 10px;
+            margin: 15px 0;
+
+            .img-card {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+
+
     }
 }
-

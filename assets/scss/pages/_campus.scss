@@ -1,9 +1,15 @@
 body {
     main {
         .campus {
+            margin: 20px;
+
             .card {
                 @extend .card;
                 padding: 10px;
+            }
+
+            .titulo {
+                text-align: center;
             }
 
             .card-flex {
@@ -12,19 +18,31 @@ body {
                     padding: 15px;
                     border-radius: 10px;
 
-                    a {
-                        button {
-                            width: 100%;
-                            border-radius: 10px;
-                            background-color: beige;
+                    .card {
+                        display: flex;
+                        justify-content: space-between;
+
+                        p {
+                            margin-bottom: 0;
+                        }
+
+                        a {
+                            button {
+                                width: 100%;
+                                border-radius: 10px;
+                                background-color: beige;
+                                margin-top: 10px;
+                            }
+                        }
+
+                        button:hover {
+                            background-color: rgba(220, 20, 60, 0.377);
+                            color: white;
+                            transition: all ease 0.1s
                         }
                     }
 
-                    button:hover {
-                        background-color: rgba(220, 20, 60, 0.377);
-                        color: white;
-                        transition: all ease 0.1s
-                    }
+
                 }
 
                 .card {
@@ -42,7 +60,22 @@ body {
                         }
                     }
                 }
+
+                .card-img {
+                    width: 100%;
+                    height: fit-content;
+                    border: 2px solid rgba(0, 0, 0, 0.377);
+                    border-radius: 10px;
+                    margin: 15px 0;
+
+                    .img-card {
+                        border-radius: 10px;
+                        width: 100%;
+                    }
+                }
             }
+
+            margin-bottom: $m100;
         }
     }
 

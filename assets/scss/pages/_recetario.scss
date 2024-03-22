@@ -1,5 +1,6 @@
 body{
     .recetario{
+        margin: 20px;
         .receta-cont{
             .card{
                 .img-card{
@@ -22,5 +23,6 @@ body{
                 }
             }
         }
+        margin-bottom: $m100;
     }
 }

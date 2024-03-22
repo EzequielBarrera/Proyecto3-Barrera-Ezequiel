@@ -7,9 +7,8 @@ body {
         background-color: map-get($colores, color-foot);
 
         .pie-dt-contacto {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @extend .footer;
+            
 
             ul {
                 li {
@@ -33,9 +32,7 @@ body {
             }
         }
         .pie-dt-serv{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @extend .footer;
             ul{
                 li{
                     display: inline-block;
@@ -49,17 +46,20 @@ body {
             }
         }
         .pie-dt-sitemap{
+            @extend .footer;
             ol{
+                list-style: none;
+                @extend .borde-link;
                 li{
-                    a:hover{
+                    padding: 2px;
+                    a{
                         color: black;
+                    }
+                    a:hover{
                         text-decoration: underline;
                     }
                     ul{
                         margin-left: 15px;
-                        li{
-                            list-style: circle;
-                        }
                     }
                 }
             }

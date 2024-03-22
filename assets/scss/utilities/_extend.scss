@@ -7,15 +7,21 @@
 
 .borde-link {
     border: 2px solid rgba(0, 0, 0, 0.288);
-    padding: 15px;
     border-radius: 30px;
+    padding: 20px;
     background-color: rgba(245, 245, 220, 0.37)
 }
 
 .card {
     width: 100%;
-    height: fit-content;
     border: 2px solid rgba(0, 0, 0, 0.377);
     border-radius: 10px;
     margin: 1rem auto;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
